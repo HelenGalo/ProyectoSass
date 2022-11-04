@@ -1,6 +1,181 @@
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+.header {
+  width: 100vmax;
+  background: linear-gradient(rgb(139, 236, 191), rgb(8, 63, 44));
+  padding: 1rem;
+}
+.header__menu {
+  display: flex;
+  justify-content: center;
+}
+.header__menu__title {
+  color: aliceblue;
+  margin-left: -60%;
+  font-family: Cochin;
+}
+.header__menu__navegacion {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.header__menu__navegacion__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  margin-left: 6rem;
+}
+.header__menu__navegacion__lista__item {
+  list-style: none;
+}
+.header__menu__navegacion__lista__item__link {
+  color: rgb(223, 215, 215);
+  text-decoration: none;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  width: 100vmax;
+  padding: 0.5rem 0.5rem;
+}
+.contenido__titulo {
+  font-family: Gill Sans;
+  color: rgb(12, 99, 94);
+  margin-top: 2%;
+  margin-left: 4rem;
+}
+.contenido__destinos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.contenido__destinos__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contenido__destinos__contenedor__img {
+  width: 18rem;
+  height: 15em;
+  border: 1px solid;
+}
+.contenido__destinos__contenedor__btn {
+  width: 18rem;
+  padding: 3%;
+  margin-top: 2%;
+  border: none;
+  background-color: rgb(8, 63, 44);
+  color: white;
+}
+.contenido__destinos__contenedor:not(:last-child) {
+  margin-right: 2%;
+}
+.contenido__paquetes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+.contenido__paquetes__principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido__paquetes__principal__articulo {
+  width: 100%;
+}
+.contenido__paquetes__principal__articulo__img-fija {
+  width: 90%;
+}
+.contenido__paquetes__principal__articulo__name {
+  font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif;
+  color: rgb(6, 78, 33);
+  letter-spacing: 4px;
+}
+.contenido__paquetes__principal__articulo__precio {
+  font-family: "Kumbh Sans", sans-serif;
+  color: rgb(28, 156, 77);
+  letter-spacing: 4px;
+  margin-top: 2%;
+  margin-left: 1rem;
+}
+.contenido__paquetes__principal__articulo__parrafo {
+  width: 80%;
+  font-family: "Kumbh Sans", sans-serif;
+  color: black;
+  text-align: justify;
+  padding: 0.5rem 1rem;
+}
+.contenido__paquetes__principal__articulo__boton {
+  width: 13rem;
+  padding: 1rem 1rem;
+  margin-top: 2%;
+  border: none;
+  background-color: rgb(8, 63, 44);
+  color: white;
+  margin-left: 1rem;
+}
+.contenido__paquetes__principal:not(:last-child) {
+  margin-right: 2%;
+}
+.contenido__formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+  padding: 2rem 3rem;
+}
+.contenido__formulario__name {
+  font-family: Gill Sans;
+  color: rgb(12, 99, 94);
+  margin-top: 2%;
+}
+.contenido__formulario__forma {
+  width: 100%;
+}
+.contenido__formulario__forma__input {
+  width: 100%;
+  padding: 0.5em;
+  margin-block-end: 1%;
+  border: magenta solid 0.2px;
+}
+.contenido__formulario__forma__textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-block-end: 1%;
+  border: magenta solid 0.2px;
+}
+.contenido__formulario__forma__buton {
+  width: max-content;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  background-color: rgb(8, 63, 44);
+  color: white;
+}
+
+.main-footer {
+  width: 100vmax;
+  background: linear-gradient(rgb(139, 236, 191), rgb(8, 63, 44));
+  padding: 1rem;
+}
+.main-footer__title {
+  text-align: center;
+  font-family: Cochin;
+  color: aliceblue;
   font-size: 20px;
-  color: green;
 }
 
 /*# sourceMappingURL=style.css.map */

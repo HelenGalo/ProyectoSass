@@ -1,9 +1,247 @@
-h1 {
-    font-size: 20px;
-    color: green;
-  
-
-
+*{
+    margin: 0;
+    padding: 0;
 }
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("../fonts/inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+   .header{
+    width: 100vmax;
+    background:linear-gradient(rgb(139, 236, 191),rgb(8,63, 44));
+    padding: 1rem;
+        &__menu{
+            display: flex;
+            justify-content: center;
+
+            &__title{
+                color: aliceblue;
+                margin-left: -60%;
+                font-family: Cochin;
+                
+
+            }
+           
+            
+           &__navegacion{
+               display: flex;
+               justify-content: left;
+               align-items: left;
+              
+           
+          
+           
+          
+                &__lista{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15%;
+                    margin-left: 6rem;
+
+                    &__item{
+                        list-style: none;
+                        &__link{
+                            color:rgb(223, 215, 215);
+                            text-decoration: none;
+                            
+                        }
+                    }
+
+
+                
+            }
+
+
+           
+            
+           
+          
+           }
+            
+                
+
+            }
+
+    
+       
+
+        
+               
+     }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        width: 100vmax;
+        padding: 0.5rem 0.5rem;
+
+        &__titulo{
+            font-family: Gill Sans;
+            color: rgb(12, 99, 94);
+            margin-top: 2%;
+           margin-left: 4rem;
+        }
+
+        &__destinos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+          
+           
+            &__contenedor{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+          
+           
+             
+             
+               
+              &__img{
+                width:18rem;
+                height: 15em;
+                border: 1px solid;
+             
+               
+               
+              }
+              &__btn{
+                width:18rem;
+                padding: 3%;
+                margin-top: 2%;
+                border: none;
+                background-color:rgb(8, 63, 44);
+                color: white;
+              }
+
+            }
+
+            &__contenedor:not(:last-child) {//este no hace ningun cambio en el ultimo elemento
+                margin-right: 2%;
+            }
+        }
+
+        &__paquetes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 3rem;
+
+         
+            &__principal{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+           
+            &__articulo{
+                width: 100%;
+
+                &__img-fija{
+                    width: 90%;
+                }
+                &__name{
+                  font-weight: bold;
+                  font-family:  "Kumbh Sans", sans-serif;
+                  color: rgb(6, 78, 33);
+                  letter-spacing: 4px;
+                
+                }
+                &__precio{
+                    font-family:  "Kumbh Sans", sans-serif;
+                    color: rgb(28, 156, 77);
+                    letter-spacing: 4px;
+                    margin-top: 2%;
+                    margin-left: 1rem;
+
+                }
+                &__parrafo{
+                    width: 80%;
+                     font-family:  "Kumbh Sans", sans-serif;
+                     color:black;
+                     text-align: justify;
+                     padding: 0.5rem 1rem;
+
+                   
+                }
+                &__boton{
+                    width:13rem;
+                    padding: 1rem 1rem;
+                    margin-top: 2%;
+                    border: none;
+                    background-color:rgb(8, 63, 44);
+                    color: white;
+                    margin-left: 1rem;
+                }
+        
+            }
+        }
+        &__principal:not(:last-child) {//este no hace ningun cambio en el ultimo elemento
+            margin-right: 2%;
+        }
+
+        }
+        &__formulario{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2%;
+            padding: 2rem 3rem;
+       
+
+           &__name{
+            font-family: Gill Sans;
+            color: rgb(12, 99, 94);
+            margin-top: 2%;
+           }
+           &__forma{
+            width: 100%;
+        
+            
+            &__input{
+                width: 100%;
+                padding: 0.5em; ;
+                margin-block-end: 1%;
+                border: magenta solid 0.2px;
+            }
+            &__textarea{
+                width: 100%;
+                padding: 0.5em; ;
+                margin-block-end: 1%;
+                border: magenta solid 0.2px;
+
+            }
+            &__buton{
+                width:max-content;
+                padding:0.5rem 0.5rem;
+                border: none;
+                background-color:rgb(8, 63, 44);
+                color: white;
+            }
+      
+           }
+        
+        }
+    }
+    .main-footer{
+        width: 100vmax;
+        background:linear-gradient(rgb(139, 236, 191),rgb(8,63, 44));
+        padding: 1rem;
+        &__title{
+            text-align: center;
+            font-family: Cochin;
+            color: aliceblue;
+            font-size: 20px;
+
+        }
+
+    }
+    
+     
+        
+    
 
    
